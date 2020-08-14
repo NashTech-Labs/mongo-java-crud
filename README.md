@@ -2,7 +2,8 @@
 This is the simple java program template that connects with MongoDB.
 
 
-#Note
+# Note
+
 In order to make this template I used mongo-java-driver dependency.
 
 
@@ -11,7 +12,7 @@ In order to make this template I used mongo-java-driver dependency.
 [https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver/2.12.3][mongo-java-driver]
 
 
-#How to Run API
+# How to Run API
 
 Please run the ConnectToDB main first i.e for shows the databases you have in your mongodb.
 
