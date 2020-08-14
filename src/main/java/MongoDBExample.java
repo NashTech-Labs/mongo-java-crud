@@ -1,4 +1,5 @@
 import java.net.UnknownHostException;
+
 import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -28,7 +29,7 @@ public class MongoDBExample {
         //read example
         DBObject query = BasicDBObjectBuilder.start().add("_id", user.getId()).get();
         DBCursor cursor = col.find(query);
-        while(cursor.hasNext()){
+        while (cursor.hasNext()) {
             System.out.println(cursor.next());
         }
 
@@ -70,7 +71,5 @@ public class MongoDBExample {
         u.setRole("CEO");
         return u;
     }
-
-
 
 }

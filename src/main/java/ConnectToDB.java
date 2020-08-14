@@ -9,14 +9,14 @@ import java.util.Set;
 
 public class ConnectToDB {
 
-        public static void main( String args[] ) throws UnknownHostException {
-            MongoClient mongo = new MongoClient("localhost", 27017);
-            //We can get all the collections names using below code.
-            //DB db = mongo.getDB("knolx");
-            //Set<String> collections = db.getCollectionNames();
-            //System.out.println(collections);
-            //We can get all the databases names using below code.
-            List<String> dbs = mongo.getDatabaseNames();
-            System.out.println(dbs);
-        }
+    public static void main(String[] args) throws UnknownHostException {
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        //We can get all the collections names using below code.
+        //DB db = mongo.getDB("knolx");
+        //Set<String> collections = db.getCollectionNames();
+        //System.out.println(collections);
+        //We can get all the databases names using below code.
+        List<String> dbs = mongo.getDatabaseNames();
+        System.out.println(dbs);
     }
+}
